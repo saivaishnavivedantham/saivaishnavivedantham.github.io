@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sai Vaishnavi Vedantham</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sai Vaishnavi Vedantham</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets/waving-girl.png" alt="Professional Woman Waving" class="profile-img">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sai Vaishnavi Vedantham</h1>
+        <p class="section__text__p2">Data Science graduate </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/SaiVaishnaviVedantham.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="scrollToContact()">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/saivaishnavivedantham/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Vaish1630'"
+          />
+        </div>
+      </div>
+    </section>
+
+	<section id="about">
+		<h1 class="about-heading">About Me 💻</h1>
+		<p>
+			I am Sai Vaishnavi Vedantham, a passionate 
+			Data Science graduate with expertise in 
+			machine learning, NLP, data visualization, and big data technologies.  
+			My goal is to become an ML Engineer, leveraging AI-driven solutions to solve complex problems and generate meaningful insights.
+		</p>
+
+		<h1 class="about-heading">Professional Experience 💼</h1>
+
+		<h2 class="role-title">Data Science Research Assistant, UTA</h2>
+		<ul>
+			<li>Developed a <span class="highlight">multi-class classification system</span> for finger-tap detection using deep learning.</li>
+			<li>Designed a <span class="highlight">hand gesture recognition system</span> using <span class="highlight">MediaPipe</span> and <span class="highlight">MLP (Multi-Layer Perceptron)</span> for accurate classification.</li>
+			<li>Trained models to differentiate taps between the <span class="highlight">thumb and other fingers</span>, capturing user interactions.</li>
+			
+		</ul>
+
+			<h2 class="role-title">Web Designer, UTA</h2>
+		<ul>
+			<li>Designed and maintained <a href="https://www.uta.edu/campus-ops/student-centers/" class="highlight">UTA Student Centers</a> website, ensuring content accuracy.</li>
+			<li>Developed a structured <a href="https://www.uta.edu/campus-ops/student-centers/events" class="highlight">Events Page</a> from scratch to improve event visibility and student engagement.</li>
+		</ul>
+
+		<h2 class="role-title">Data Analytics Intern</h2>
+		<ul>
+			<li>Built a <span class="highlight">predictive model</span> using regression techniques to forecast <span class="highlight">company profit</span>.</li>
+			<li>Applied <span class="highlight">SQL</span> for data extraction, improving the efficiency of data retrieval and management.</li>
+		</ul>
+
+		<h1 class="about-heading">Education 📚</h1>
+		<ul class="education-list">
+			<li>🎓 Master of Science in Data Science, University of Texas at Arlington</li>
+			<li>🎓 Bachelor of Technology in Electronics and Communication Engineering, NRCM, Hyderabad, India</li>
+		</ul>
+
+		<h1 class="about-heading">Interests 🌟</h1>
+			<ul class="interests-list">
+				<li>☕ Enjoying a cup of tea with a good book</li>
+				<li>🤖 Passionate about problem-solving and machine learning</li>
+				<li>💡 Enthusiastic about volunteering and community participation</li>
+			</ul>
+
+	</section>
+
+
+
+    <section id="experience">
+		<p class="section__text__p1">Explore My</p>
+		<h1 class="title">Tools</h1>
+
+		<h2 class="skills-heading">🛠</h2>
+			<div class="skills-list">
+				<div class="skill">
+					<img src="./assets/python.png" alt="Python Logo" class="skill-icon">
+					<p>Python</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/r.png" alt="R Logo" class="skill-icon">
+					<p>R</p>
+				</div>
+				<div class="skill">
+				<img src="./assets/c.png" alt="C Logo" class="skill-icon">
+					<p>C</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/java.png" alt="Java Logo" class="skill-icon">
+					<p>Java</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/sql.png" alt="SQL Logo" class="skill-icon">
+					<p>SQL</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/html.png" alt="HTML Logo" class="skill-icon">
+					<p>HTML</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/css.png" alt="CSS Logo" class="skill-icon">
+					<p>CSS</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/javascript.png" alt="JavaScript Logo" class="skill-icon">
+					<p>JavaScript</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/scala.png" alt="Scala Logo" class="skill-icon">
+				<p>Scala</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/spark.png" alt="Apache Spark Logo" class="skill-icon">
+					<p>Apache Spark</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/hadoop.png" alt="Hadoop Logo" class="skill-icon">
+					<p>Hadoop</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/aws-glue.png" alt="AWS Logo" class="skill-icon">
+				<p>AWS</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/powerbi.png" alt="Power BI Logo" class="skill-icon">
+					<p>Power BI</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/tableau.png" alt="Tableau Logo" class="skill-icon">
+					<p>Tableau</p>
+				</div>
+				<div class="skill">
+				
+					<img src="./assets/git.png" alt="Git Logo" class="skill-icon">
+				<p>Git</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/sas.png" alt="SAS Logo" class="skill-icon">
+				<p>SAS</p>
+				</div>
+			</div>
+	</section>
+
+    <section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+
+  <div class="projects-list">
+    
+    <!-- Project 1: Finger Tap Detection for Parkinson's Disease -->
+    <div class="project">
+      <div class="project-card">
+        <div class="project-front">
+          <img src="assets/tap.jpeg" alt="Finger Tap Detection" class="project-img">
+          <h2 class="project-title">Finger Tap Detection for Parkinson’s Disease</h2>
+        </div>
+        <div class="project-back">
+          <p>
+            Developed a <b>multi-class classification system</b> for <b>finger-tap detection</b> using deep learning.  
+            Implemented <b>MediaPipe</b> for real-time <b>hand tracking</b> and classified finger taps using an <b>MLP (Multi-Layer Perceptron).</b>  
+            Designed to <b>monitor Parkinson's progression</b>, tracking <b>involuntary taps</b> as a potential disease indicator.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Chatbot with Retrieval-Augmented Generation (RAG) -->
+    <div class="project">
+      <div class="project-card">
+        <div class="project-front">
+          <img src="assets/bot.jpeg" alt="Chatbot with RAG" class="project-img">
+          <h2 class="project-title">Chatbot with Retrieval-Augmented Generation (RAG)</h2>
+        </div>
+        <div class="project-back">
+          <p>
+            Developed an <b>AI-powered chatbot</b> leveraging <b>Retrieval-Augmented Generation (RAG)</b> for <b>context-aware responses.</b>  
+            Used <b>FAISS</b> for efficient <b>retrieval of knowledge chunks</b> from structured sources.  
+            Optimized <b>query embeddings</b> to improve accuracy and reduce response latency.  
+            Personally trained this chatbot on a <b>Python textbook</b>, making it a <b>study assistant</b> for quick topic revisions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3: Speech Emotion Recognition Using TESS Dataset -->
+    <div class="project">
+      <div class="project-card">
+        <div class="project-front">
+          <img src="assets/speech.jpeg" alt="Speech Emotion Recognition" class="project-img">
+          <h2 class="project-title">Speech Emotion Recognition using TESS Dataset</h2>
+        </div>
+        <div class="project-back">
+          <p>
+            Built a <b>Speech Emotion Recognition (SER) system</b> using <b>Convolutional Recurrent Neural Networks (CRNNs)</b> on the <b>TESS dataset.</b>  
+            Extracted key features from speech using <b>MFCCs</b> and implemented <b>three pooling strategies</b> (max, mean, attention-based weighted).  
+            Optimized with <b>TensorFlow</b>, achieving <b>high classification accuracy</b> in emotion recognition.  
+            The pipeline enables <b>real-time analysis</b> and <b>feature extraction</b> for speech-based AI applications.
+          </p>
+        </div>
+      </div>
+    </div>
+<!-- Project 4: Sentiment Analysis for a Brand -->
+<div class="project">
+  <div class="project-card">
+    <div class="project-front">
+      <img src="assets/sentiment-analysis.png" alt="Sentiment Analysis" class="project-img">
+      <h2 class="project-title">Sentiment Analysis for a Furniture Brand</h2>
+    </div>
+    <div class="project-back">
+      <p>
+        Developed a <b>sentiment analysis pipeline</b> to track <b>brand perception</b> from social media data.  
+        Applied <b>NLP techniques</b> such as <b>tokenization</b>, <b>lemmatization</b>, and <b>stopword removal</b> for effective text processing.  
+        Built a <b>machine learning-based sentiment classifier</b> using <b>Logistic Regression</b>, <b>Random Forest</b>, and <b>LSTM</b>, achieving <b>85%+ accuracy</b> in predicting polarity (<b>positive</b>, <b>negative</b>, <b>neutral</b>).  
+        Designed <b>interactive worksheets</b> in <b>Tableau</b> to visualize sentiment trends, helping businesses make <b>data-driven marketing decisions</b>.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+</section>
+
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Info</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:vaish.Vedantham@gmail.com">vaish.vedantham@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/saivaishnavivedantham/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Sai Vaishnavi Vedantham All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
