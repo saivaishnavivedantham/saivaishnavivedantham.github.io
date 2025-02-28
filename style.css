@@ -326,10 +326,10 @@ ul {
   margin-bottom: 0.5rem;
 }
 
-/* Highlighted Orange Text (Key Terms) */
+/* Highlighted black Text (Key Terms) */
 .highlight {
   font-size: 1.0rem; /* Adjust for emphasis */
-  color: darkorange;
+  color: black;
   font-weight: 600;
 }
 
