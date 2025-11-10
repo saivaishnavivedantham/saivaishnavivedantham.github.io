@@ -545,15 +545,3 @@ footer {
 footer p {
   text-align: center;
 }
-
-.simple-skills-list {
-  padding-left: 20px;
-  margin-top: 20px;
-}
-
-.simple-skills-list li {
-  margin-bottom: 10px;
-  font-size: 1rem; /* Same as experience bullets */
-  color: #000;      /* Bright black */
-  font-weight: 600; /* Matches boldness */
-}
