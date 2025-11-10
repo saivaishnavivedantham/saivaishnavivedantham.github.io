@@ -547,23 +547,13 @@ footer p {
 }
 
 .simple-skills-list {
-  grid-column: 1 / -1; /* span full width of the grid */
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.simple-skills-list ul {
-  list-style-type: disc;
   padding-left: 20px;
-  margin: 0;
+  margin-top: 20px;
 }
 
 .simple-skills-list li {
-  margin-bottom: 8px;
-  font-size: 0.95rem;
-  color: #444;
-  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: 1rem; /* Same as experience bullets */
+  color: #000;      /* Bright black */
+  font-weight: 600; /* Matches boldness */
 }
